@@ -1,0 +1,6 @@
+h1 {
+    @include primary-header-font
+}
+p {
+    @include body-font;
+}
