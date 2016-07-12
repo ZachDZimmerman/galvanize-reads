@@ -1,3 +1,19 @@
+h1 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: 700; }
+
+p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400; }
+
+a {
+  text-decoration: none;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400; }
+
 header {
   background-color: #4d4d4d;
   color: #f7901e;
@@ -8,16 +24,21 @@ header {
 
 .header_image {
   width: 2rem;
-  height: 2rem; }
+  height: 2rem;
+  padding: 0 0.7rem; }
 
-h1 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 2rem;
-  font-weight: 700; }
+main {
+  display: flex;
+  justify-content: flex-start;
+  padding: 1rem; }
 
-p {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.5rem;
-  font-weight: 400; }
+.authors, .books {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px #000 solid; }
+
+img {
+  height: 10vh;
+  width: 10vw; }
 
 /*# sourceMappingURL=style.css.map */

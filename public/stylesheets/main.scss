@@ -1,0 +1,14 @@
+main {
+    display: flex;
+    justify-content: flex-start;
+    padding: 1rem;
+}
+.authors, .books {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px $black solid;
+}
+img {
+  height: 10vh;
+  width: 10vw;
+}
