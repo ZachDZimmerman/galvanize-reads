@@ -14,6 +14,9 @@ module.exports = {
   getGenre: function () {
     return knex('genre').select();
   },
+  deleteBook: function (id) {
+    return knex('book').where('id', id).del();
+  },
   addBook: function (data) {
     if (data.genre_id[1]) {
       return this.insertGenre(data.genre_id[1])

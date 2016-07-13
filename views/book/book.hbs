@@ -1,0 +1,15 @@
+{{#each book}}
+    <section class="book">
+      <article class="book-list">
+        <img src="{{cover_url}}" alt="" />
+            Title: {{title}}
+          <hr>
+            Description: {{description}}
+          <a href="/book/delete/{{id}}">
+            <i class="fa fa-remove" aria hidden="true"></i>
+          </a>
+      </article>
+    </section>
+{{/each}}
+
+<a href="/book/new">Add Book</a>

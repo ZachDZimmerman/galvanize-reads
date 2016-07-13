@@ -1,0 +1,13 @@
+<section class="book">
+  <h2>Delete Book</h2>
+    <img src="{{book.cover_url}}" alt="" />
+      <article>
+        {{book.title}}
+        <hr>
+        {{book.description}}
+        <br>
+        <form action="/book/{{book.id}}?_method=DELETE" method="post">
+          <input class="delete" value="Delete {{book.title}}?" type="submit"></input>
+        </form>
+      </article>
+  </section>
