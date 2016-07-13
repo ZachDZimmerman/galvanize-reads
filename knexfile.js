@@ -4,7 +4,14 @@ module.exports = {
 
   development: {
     client: 'pg',
-    connection: 'postgres://localhost/galvanize-reads'
+    connection: {
+        database: process.env.DB_HOST,
+        user: process.env.DB_USER,
+        password: process.env.DB_PASSWORD
+    }
+  },
+  production: {
+      client: 'pg',
+      connection: process.env.DATABASE_URL + '?ssl=true'
   }
-
 };
