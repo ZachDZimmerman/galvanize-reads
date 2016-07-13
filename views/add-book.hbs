@@ -1,0 +1,19 @@
+<section class="book">
+  <h2>Add Book</h2>
+  <form action="/book" method="post">
+    <label for="title">Title</label>
+    <input id="title" type="text" name="title">
+    <label for="genre_id">Genre</label>
+    <select id="genre_id" name="genre_id">
+      <option selected disabled>Pick Genre</option>
+      {{#each genre}}
+      <option value="{{genre_id}}" name="genre_id">{{name}}</option>
+      {{/each}}
+    </select>
+    <label for="description">Description</label>
+    <textarea id="description" type="text" name="description"></textarea>
+    <label for="cover_url">Book Cover Image URL</label>
+    <input id="cover_url" type="url" name="cover_url" placeholder="Image URL">
+    <input type="submit" value="Add Book">
+  </form>
+</section>

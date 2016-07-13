@@ -1,0 +1,14 @@
+.book {
+    h2 {
+        @include secondary-header-font;
+        margin-bottom: 1rem;
+    }
+    .book-list {
+        li {
+            padding: 1rem;
+            background-color: $light-grey;
+            margin: 0.5rem 0;
+            @include body-font;
+        }
+    }
+}
