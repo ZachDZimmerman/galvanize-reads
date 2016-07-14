@@ -11,6 +11,7 @@ require('dotenv').config();
 
 var routes = require('./routes/index');
 var book = require('./routes/book');
+var author = require('./routes/author');
 
 var app = express();
 
@@ -24,7 +25,9 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
+
 app.use(methodOverride("_method"));
+
 app.use(require('node-sass-middleware')({
   src: path.join(__dirname, 'public'),
   dest: path.join(__dirname, 'public'),
@@ -35,6 +38,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/book', book);
+app.use('/author', author);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

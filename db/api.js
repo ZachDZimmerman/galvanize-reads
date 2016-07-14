@@ -28,5 +28,8 @@ module.exports = {
   },
   addBook: function (book) {
     return knex('book').insert(book).returning('id');
+  },
+  listAllAuthors: function () {
+    return knex('author').select();
   }
 };
