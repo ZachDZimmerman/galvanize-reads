@@ -1,4 +1,4 @@
-<section>
+<section class="flex-center">
   <h2>Edit Book</h2>
     <form action="/book/edit/{{book.id}}" method="post">
       <label for="title">Title</label>
@@ -13,6 +13,6 @@
       <textarea name="description" value="">{{book.description}}</textarea>
       <label for="cover_url">Book Cover Image URL</label>
       <input id="cover_url" type="url" name="cover_url" value="{{book.cover_url}}">
-      <input type="submit" value="Edit Book">
+      <input class="new" type="submit" value="Edit Book">
     </form>
 </section>

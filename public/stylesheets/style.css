@@ -71,8 +71,8 @@ main {
   border: 1px #000 solid; }
 
 img {
-  height: 10vh;
-  width: 10vw; }
+  height: 10vmin;
+  width: 10vmin; }
 
 .book h2 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -87,5 +87,14 @@ img {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.5rem;
   font-weight: 400; }
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.flex-column {
+  display: flex;
+  flex-direction: column; }
 
 /*# sourceMappingURL=style.css.map */
