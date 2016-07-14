@@ -8,4 +8,13 @@ router.get('/', function(req, res, next) {
   });
 });
 
+router.get('/new', function (req, res, next) {
+  res.render('author/add-author');
+});
+
+router.post('/new', function (req, res, next) {
+  api.addNewAuthor(req.body).then(function () {
+    res.redirect('/author');
+  });
+});
 module.exports = router;

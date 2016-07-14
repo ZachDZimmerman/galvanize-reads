@@ -31,5 +31,8 @@ module.exports = {
   },
   listAllAuthors: function () {
     return knex('author').select();
+  },
+  addNewAuthor: function (author) {
+    return knex('author').insert(author).returning('id');
   }
 };
