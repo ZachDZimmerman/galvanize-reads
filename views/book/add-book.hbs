@@ -1,13 +1,13 @@
 <section class="book">
   <h2>Add Book</h2>
-  <form action="/book" method="post">
+  <form action="/book/new" method="post">
     <label for="title">Title</label>
     <input id="title" type="text" name="title">
     <label for="genre_id">Genre</label>
     <select id="genre_id" name="genre_id">
       <option selected disabled>Pick Genre</option>
       {{#each genre}}
-      <option value="{{genre_id}}" name="genre_id">{{name}}</option>
+      <option value="{{this.id}}" name="genre_id">{{this.name}}</option>
       {{/each}}
     </select>
     <label for="description">Description</label>

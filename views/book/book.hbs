@@ -1,12 +1,17 @@
 {{#each book}}
     <section class="book">
       <article class="book-list">
+        <a href="/book/{{id}}">
         <img src="{{cover_url}}" alt="" />
+        </a>
             Title: {{title}}
           <hr>
             Description: {{description}}
           <a href="/book/delete/{{id}}">
             <i class="fa fa-remove" aria hidden="true"></i>
+          </a>
+          <a href="/book/edit/{{id}}">
+            <i class="fa fa-pencil" aria hidden="true"></i>
           </a>
       </article>
     </section>
